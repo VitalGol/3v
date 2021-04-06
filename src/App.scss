@@ -1,7 +1,18 @@
         .container {
             background: rgb(123, 158, 158);
             display: flex;
-            // justify-content: c;
+            justify-content: center;
+            position: relative;
+            .logo {
+                display: block;
+                position: absolute;
+                top: 5rem;
+                left: 10rem;
+                img {
+                    max-width: 200px;
+                    max-height: 200px;
+                }
+            }
             .menu {
                 display: flex;
                 align-items: center;

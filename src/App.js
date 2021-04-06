@@ -5,7 +5,7 @@ import Products from "./components/Products/Products";
 import Articles from "./components/Articles/Articles";
 import Partners from "./components/Partners/Partners";
 import Contacts from "./components/Contacts/Contacts";
-
+import img from "./assets/3v_LOG.png";
 // import "./components/Hexagon/Hexagon.scss";
 import "./App.scss";
 // import Hexagon from "./components/Hexagon/Hexagon";
@@ -14,9 +14,11 @@ const App = () => {
   function handleClick(e) {
     let div = document.querySelector(".contant");
     let nav = document.querySelector("nav");
+    let img = document.querySelector(".logo");
     // console.log(div);
     // console.log(nav.classList);
     if (e.target.tagName === "IMG") {
+      img.style.display = "none";
       nav.classList.remove("menu-start");
       nav.classList.add("menu");
       // nav.classList.toggle("menu-start", "menu");
@@ -25,6 +27,9 @@ const App = () => {
   }
   return (
     <div className="container">
+      <div className="logo">
+        <img src={img} alt="" />
+      </div>
       <Router>
         {/* <nav className="menu"> */}
         <nav className="menu-start">

@@ -1,10 +1,13 @@
 import React from "react";
 import Hex from "../Hex/Hex";
 import "./Home.scss";
+import img from "../../assets/3v_LOG.png";
 const Home = () => {
   return (
-    <div>
+    <div className="home">
       <h1>Home</h1>
+      <img src={img} alt="" />
+
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure sed ab
         dolorum blanditiis, similique modi perspiciatis, perferendis voluptas

@@ -3,9 +3,19 @@
   //      //  color: #333;
   //      //  background: #edf2f4;
   //  }
-  .home-hex {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 50vw;
+  .home {
+      // position: relative;
+      img {
+          max-width: 150px;
+          max-height: 150px;
+          // position: absolute;
+          // top: 0;
+          // left: 0;
+      }
+      .home-hex {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 25vw;
+      }
   }
