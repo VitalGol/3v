@@ -13,15 +13,21 @@ import "./App.scss";
 const App = () => {
   function handleClick(e) {
     let div = document.querySelector(".contant");
-    // console.log(menu);
+    let nav = document.querySelector("nav");
+    // console.log(div);
+    // console.log(nav.classList);
     if (e.target.tagName === "IMG") {
+      nav.classList.remove("menu-start");
+      nav.classList.add("menu");
+      // nav.classList.toggle("menu-start", "menu");
       div.classList.remove("none");
     }
   }
   return (
     <div className="container">
       <Router>
-        <nav className="menu">
+        {/* <nav className="menu"> */}
+        <nav className="menu-start">
           <ul id="hexGrid" onClick={handleClick}>
             <li className="hex">
               <Link to="/" className="hexIn">
